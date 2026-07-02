@@ -2,12 +2,12 @@
   "name": "Papacy Drug Store POS",
   "short_name": "Papacy POS",
   "description": "Point of Sale System for Papacy Drug Store",
-  "start_url": "./Papacy_POS_v4-1-1.html",
+  "start_url": "./papacy-home.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#0A0E1A",
   "theme_color": "#00C853",
-  "orientation": "any",
+  "orientation": "portrait-primary",
   "categories": ["business", "productivity"],
   "icons": [
     {
@@ -23,13 +23,12 @@
       "purpose": "any maskable"
     }
   ],
-  "screenshots": [],
   "shortcuts": [
     {
       "name": "New Sale",
       "short_name": "Sale",
-      "description": "Go to POS / New Sale",
-      "url": "./Papacy_POS_v4-1-1.html#pos"
+      "description": "Open POS for a new sale",
+      "url": "./Papacy_POS_v4-1-1.html"
     }
   ]
 }

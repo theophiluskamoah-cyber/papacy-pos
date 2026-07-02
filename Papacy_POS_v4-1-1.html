@@ -348,6 +348,20 @@ tfoot td{font-weight:700;color:var(--green)}
   #purchasesTable .btn{display:none !important}
 }
 </style>
+
+<script>
+// ── Home Screen: auto-open tab if requested ──
+(function() {
+  const tab = localStorage.getItem('papacy_open_tab');
+  if (tab) {
+    localStorage.removeItem('papacy_open_tab');
+    window.addEventListener('DOMContentLoaded', () => {
+      const btn = document.querySelector(`.tab-btn[data-tab="${tab}"]`);
+      if (btn) btn.click();
+    });
+  }
+})();
+</script>
 </head>
 <body>
 <div id="toastArea"></div>
